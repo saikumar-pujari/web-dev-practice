@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+         body {
+            display: flex;
+            justify-content: center;
+            align-items:none;
+            height: 1150px;
+            margin: 10;
+            background-color: #8f8686;
+        }
+
+        form {
+            width: 600px;
+            background-color: #f8f3f3;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(175, 12, 12, 0.1);
+        }
+
+        fieldset {
+            border: 4px solid rgb(233, 58, 58);
+            padding: 20px;
+            margin: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        input[type="date"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"] {
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="none">
+        <fieldset>
+            <legend>User Personal Information</legend>
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="mail">Enter Your Email: </label>
+            <input type="email" name="mail" id="mail"><br><br>
+            <label for="pass">Enter your password:</label>
+            <input type="password" name="pass" id="pass"><br><br>
+            <label for="conpass">Confirm your password: </label>
+            <input type="password" name="conpass" id="conpass"><br><br>
+            <label for="check">BACKLOG:</label><br>
+           <div>
+            <input type="checkbox" name="check" id="check">
+            <label for="check">i dont have a BACKLOG</label><br>
+            <input type="checkbox">
+            <label for="check">i have a BACKLOG</label><br><br>
+           </div>
+            <label for="gender">enter your gender</label><br>
+            <div>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">male </label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">female </label>
+                <input type="radio" name="gender" id="gender" value="other">
+                <label for="other">other</label>
+                
+            </div><br>
+            <label for="dob">Enter your date of birth: </label>
+            <input type="date" name="dob" id="dob"><br><br>
+            <label for="address">Enter your address: </label>
+            <input type="adress" name="address" id="address"><br> <br>
+            <label for="num">enter your phone number:</label>
+            <input type="number" name="num" id="num"><br><br>
+            <textarea rows="3" cols="30" name="comment" id="comment" required>if you have any quesry plz resolve yourself </textarea><br><br>
+            <input type="submit" name="" id="" value="step 2"><br><br>
+        </fieldset>
+    </form>
+</body>
+</html>
